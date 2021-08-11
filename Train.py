@@ -74,7 +74,8 @@ for train_index, val_index in kf.split(Data_helper.loadDataset("train", False)[0
 
     # Evaluasi citra heatmap yang dihasilkan
     # Metrik pengukuran menggunakan Average Precision (AP)
-    loss, AP = Evaluasi.evaluate(predVal, yVal, yVal_Label, 0.50)
+    loss, AP = Evaluasi.evaluate(
+        predVal, yVal, yVal_Label, 0.50, inputShape[0])
 
     # Simpan score (AP) yang didapatkan
     score.append([loss, AP])
