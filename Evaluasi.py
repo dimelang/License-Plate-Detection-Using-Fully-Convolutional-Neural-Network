@@ -55,9 +55,9 @@ def Iou(tar, pred):
         return iou
 
 
-def getTrueLabel(label):
+def getTrueLabel(label, size):
     label = label[:-1]
-    newSize = 192
+    newSize = size
     label = (newSize/960)*label
     KiA_KaB = [label[::2, :, 1], label[::2, :, 0]]
     KaA_KiB = [label[1::2, :, 1], label[1::2, :, 0]]
@@ -218,7 +218,7 @@ def AP(rec, prec):
     return ap, mpre[0:len(mpre) - 1], mrec[0:len(mpre) - 1], ii
 
 
-def evaluate(pred, target, label, threshIou):
+def evaluate(pred, target, label, threshIou, sizeImage):
     confMat = []
     Loss = []
     for x in range(len(pred)):
@@ -230,7 +230,7 @@ def evaluate(pred, target, label, threshIou):
         im = test
         heatmapLabel = label[index]
         keypointPred = KeypointPrediction(im)
-        keypointTar = getTrueLabel(heatmapLabel)
+        keypointTar = getTrueLabel(heatmapLabel, sizeImage)
         confusionMat = confusionMatrix2(keypointTar, keypointPred, threshIou)
         confMat.append(confusionMat)
 
