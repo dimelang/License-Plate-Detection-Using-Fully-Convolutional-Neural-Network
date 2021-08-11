@@ -32,4 +32,4 @@ X_test, y_test, yTest_Label = Data_helper.loadDataset("test")
 pred = predModel.predict(X_test)
 
 # Evaluasi hasil prediksi
-loss, AP = Evaluasi.evaluate(pred, y_test, yTest_Label, 0.50)
+loss, AP = Evaluasi.evaluate(pred, y_test, yTest_Label, 0.50, X_test.shape[1])
