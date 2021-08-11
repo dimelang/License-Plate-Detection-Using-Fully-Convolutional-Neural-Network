@@ -1,0 +1,58 @@
+{
+  "version": "4.5.6",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "KiA",
+      "points": [
+        [
+          561.0,
+          492.6
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "point",
+      "flags": {}
+    },
+    {
+      "label": "KaA",
+      "points": [
+        [
+          670.0,
+          507.5
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "point",
+      "flags": {}
+    },
+    {
+      "label": "KaB",
+      "points": [
+        [
+          661.1,
+          542.7
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "point",
+      "flags": {}
+    },
+    {
+      "label": "KiB",
+      "points": [
+        [
+          552.4,
+          527.9
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "point",
+      "flags": {}
+    }
+  ],
+  "imagePath": "..\\Gambar\\0frame145.jpg",
+  "imageData": null,
+  "imageHeight": 960,
+  "imageWidth": 960
+}
