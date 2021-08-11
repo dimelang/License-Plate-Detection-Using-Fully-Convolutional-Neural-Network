@@ -36,7 +36,7 @@ Perbandingan performa terhadap ukuran citra yang berbeda. Metrik evaluasi menggu
 Perbandingan terhadap [Faster RCNN](https://arxiv.org/abs/1506.01497)
 | Ukuran citra | AP | Waktu (detik) |
 | ------ | ------ | ------ |
-|96⁡×⁡96|96.45%|0.80|
+|320⁡×⁡320|96.45%|0.80|
 |960⁡×960|77.72%|3.198|
 
 ##### Pustaka
